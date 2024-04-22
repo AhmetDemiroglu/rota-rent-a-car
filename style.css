@@ -387,7 +387,7 @@ option{
   } */
 
   .box{
-    width: 152px;
+    width: 255px;
     height: 85px;
     /* border: #006FCD 1px solid; */
     border-radius: 15px;
