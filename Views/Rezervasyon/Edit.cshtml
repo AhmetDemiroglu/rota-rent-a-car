@@ -1,0 +1,124 @@
+﻿@model RezervasyonEkleViewModel
+@using System.Security.Claims
+
+@{
+    ViewData["Title"] = "Rezervasyon Düzenle";
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Rezervasyonu Düzenle</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="Rezervasyon" asp-action="Edit" method="post" novalidate>
+                        <input asp-for="RezervasyonId" type="hidden" />
+                        <div class="form-group">
+                            <label asp-for="TeslimTarih">Teslim Tarihi ve Saati</label>
+                            <input asp-for="TeslimTarih" id="TeslimTarih" type="datetime-local" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="IadeTarih">İade Tarihi ve Saati</label>
+                            <input asp-for="IadeTarih" id="IadeTarih" type="datetime-local" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TeslimYeriId">Teslim Yeri</label>
+                            <select asp-for="TeslimYeriId" asp-items="@Model.TeslimYeriSecenekleri" id="TeslimYeri" class="form-control">
+                                <option value="">Lütfen bir teslim yeri seçiniz</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="IadeYeriId">İade Yeri</label>
+                            <select asp-for="IadeYeriId" asp-items="@Model.IadeYeriSecenekleri" class="form-control">
+                                <option value="">Lütfen bir iade yeri seçiniz</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="AracId">Araç Seçimi</label>
+                            <select asp-for="AracId" id="AracId" class="form-control">
+                                <option value="">Lütfen bir araç seçiniz</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Sigorta">
+                                <input asp-for="Sigorta" type="checkbox" /> Sigorta
+                            </label>
+                        </div>
+                        @if (User.FindFirstValue(ClaimTypes.Role) == "admin")
+                        {
+                            <div class="form-check">
+                                <input asp-for="IsActive" class="form-check-input" />
+                                <label asp-for="IsActive" class="form-check-label">Aktif</label>
+                            </div>
+                        }
+                        <button type="submit" class="btn btn-primary">Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        function roundToNearest(minutes) {
+            const ms = 1000 * 60 * minutes;
+            const roundedDate = new Date(Math.ceil(new Date().getTime() / ms) * ms);
+            roundedDate.setMinutes(roundedDate.getMinutes() - roundedDate.getTimezoneOffset());
+            return roundedDate.toISOString().slice(0, 16);
+        }
+
+        function setInitialValues() {
+            const teslimTarihInput = $('#TeslimTarih');
+            const iadeTarihInput = $('#IadeTarih');
+
+            if (!teslimTarihInput.val()) {
+                teslimTarihInput.val(roundToNearest(30));
+            }
+            if (!iadeTarihInput.val()) {
+                iadeTarihInput.val(roundToNearest(30));
+            }
+        }
+
+        setInitialValues();
+
+        function loadAvailableCars() {
+            var rezervasyonId = $('#RezervasyonId').val();
+            var teslimYeriId = $('#TeslimYeri').val();
+            var teslimTarihi = $('#TeslimTarih').val();
+            var iadeTarihi = $('#IadeTarih').val();
+            if (teslimTarihi && iadeTarihi && teslimYeriId) {
+                $.ajax({
+                    url: '@Url.Action("GetAvailableCars", "Rezervasyon")',
+                    type: 'GET',
+                    data: { rezervasyonId: rezervasyonId, teslimTarihi: teslimTarihi, iadeTarihi: iadeTarihi, teslimYeriId: teslimYeriId },
+                    success: function (data) {
+                        $('#AracId').empty().append('<option value="">Lütfen bir araç seçiniz</option>');
+                        $.each(data, function (i, item) {
+                            $('#AracId').append($('<option>', {
+                                value: item.value,
+                                text: item.text,
+                                selected: item.selected
+                            }));
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Bir hata oluştu: " + error);
+                        $('#AracId').empty().append('<option value="">Araç yüklenemedi</option>');
+                    }
+                });
+            }
+        }
+
+        $('#TeslimYeri, #TeslimTarih, #IadeTarih').change(loadAvailableCars);
+
+        // Sayfa yüklendiğinde ilk kez araçları yükle
+        loadAvailableCars();   
+    });
+</script>

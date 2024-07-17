@@ -1,0 +1,72 @@
+﻿    @model BireyselKullaniciViewModel
+
+@{
+    ViewData["Title"] = "Yeni Kullanıcı Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2>Yeni Kullanıcı Ekle</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6 user-form">
+            <form asp-action="Create" method="post">
+                <div class="form-group">
+                    <label asp-for="Ad" class="control-label"></label>
+                    <input asp-for="Ad" class="form-control" />
+                    <span asp-validation-for="Ad" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Soyad" class="control-label"></label>
+                    <input asp-for="Soyad" class="form-control" />
+                    <span asp-validation-for="Soyad" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Eposta" class="control-label"></label>
+                    <input asp-for="Eposta" class="form-control" type="email" />
+                    <span asp-validation-for="Eposta" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Telefon" class="control-label"></label>
+                    <input asp-for="Telefon" class="form-control" />
+                    <span asp-validation-for="Telefon" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Adres" class="control-label"></label>
+                    <input asp-for="Adres" class="form-control" />
+                    <span asp-validation-for="Adres" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="KimlikNo" class="control-label"></label>
+                    <input asp-for="KimlikNo" class="form-control" />
+                    <span asp-validation-for="KimlikNo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DogumTarihi" class="control-label"></label>
+                    <input asp-for="DogumTarihi" class="form-control" type="date" />
+                    <span asp-validation-for="DogumTarihi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Sifre" class="control-label"></label>
+                    <input asp-for="Sifre" class="form-control" type="password" />
+                    <span asp-validation-for="Sifre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SifreKontrol" class="control-label"></label>
+                    <input asp-for="SifreKontrol" class="form-control" type="password" />
+                    <span asp-validation-for="SifreKontrol" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Kaydet" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="mt-3">
+        <a asp-action="UserIndex" class="btn btn-secondary">Geri Dön</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/admin.js"></script>

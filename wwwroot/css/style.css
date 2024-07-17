@@ -1,0 +1,368 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+h5, h1, h2, h3, h4, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .navbar-brand img {
+    height: 50px;
+}
+
+.btn-warning {
+    background-color: #f09721;
+    border-color: #f09721;
+    font-family: 'Poppins', sans-serif;
+}
+
+    .btn-warning:hover {
+        background-color: #d0811a;
+        border-color: #d0811a;
+    }
+
+.search-container {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    background: url('/img/bg.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+    .search-container::before,
+    .search-container::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .search-container::before {
+        top: 0;
+        background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.1));
+    }
+
+    .search-container::after {
+        bottom: 0;
+        background: linear-gradient(to top, white, rgba(255, 255, 255, 0.3));
+        opacity: 0.60;
+        background-image: none;
+    }
+
+    .search-container form {
+        position: relative;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        font-family: 'Poppins', sans-serif;
+    }
+
+        .search-container form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .search-container form button {
+            background: #f09721;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+            .search-container form button:hover {
+                background: #d0811a;
+            }
+
+.footer-icons {
+    height: 20px;
+}
+
+.footer-bar {
+    background-color: #f09721;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0;
+}
+
+    .footer-bar a {
+        color: white;
+        margin: 0 15px;
+    }
+
+        .footer-bar a:hover {
+            color: #d0811a;
+        }
+
+footer {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+    footer .logo-section {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-right: 20px;
+    }
+
+    footer .links-section {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        footer .links-section .col {
+            margin-left: 40px;
+        }
+
+    footer a {
+        color: #000000;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            color: #f09721;
+            text-decoration: none;
+        }
+
+@media (max-width: 768px) {
+    footer .logo-section, footer .links-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer .links-section {
+        margin-top: 20px;
+    }
+
+        footer .links-section .col {
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+
+    footer .footer-bar {
+        flex-direction: column;
+    }
+
+    .footer-bar a {
+        margin: 5px;
+    }
+}
+
+.araclar-container {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 80px; 
+}
+.araclar-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+    .araclar-card:hover {
+        transform: translateY(-10px);
+    }
+
+.araclar-card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.araclar-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+    .araclar-card-body .content {
+        flex: 1;
+    }
+
+    .araclar-card-body .actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+    }
+
+.araclar-card-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #007bff;
+    height: 100%;
+    text-align: center;
+    color: #007bff;
+}
+
+    .araclar-card-placeholder a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+        .araclar-card-placeholder a:hover {
+            color: #0056b3;
+        }
+
+.araclar-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.araclar-col-md-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+/* Rezervasyonlar İçin CSS */
+.rezervasyon-container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.rezervasyon-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+    .rezervasyon-card.completed {
+        opacity: 0.6; 
+    }
+
+    .rezervasyon-card:hover {
+        transform: translateY(-10px);
+    }
+
+.rezervasyon-card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.rezervasyon-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+    .rezervasyon-card-body .content {
+        flex: 1;
+    }
+
+    .rezervasyon-card-body .actions {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+.rezervasyon-card-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #007bff;
+    height: 100%;
+    text-align: center;
+    color: #007bff;
+    width: 100%;
+}
+
+    .rezervasyon-card-placeholder a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+        .rezervasyon-card-placeholder a:hover {
+            color: #0056b3;
+        }
+
+.rezervasyon-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.rezervasyon-col-md-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+.btn.disabled {
+    pointer-events: none;
+    opacity: 0.65;
+    background-color: #d3d3d3;
+    border-color: #d3d3d3;
+    color: #6c757d;
+}
+
+/* İletişim sayfası için */
+.contact-container {
+    margin-top: 30px;
+}
+
+.contact-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contact-card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.25rem;
+}
+
+.contact-card-body {
+    padding: 20px;
+}
+
+

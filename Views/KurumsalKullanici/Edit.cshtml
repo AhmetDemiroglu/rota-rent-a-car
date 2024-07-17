@@ -1,0 +1,110 @@
+﻿@model KurumsalKullaniciViewModel
+
+@{
+    ViewData["Title"] = "Kullanıcı Düzenle";
+    Layout = "_Layout";
+}
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        Kullanıcı Düzenle
+                    </div>
+            <div class="card-body">
+                <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="KurumsalKullaniciId" />
+                <div class="form-group">
+                    <label asp-for="FirmaAdi" class="form-label">Firma Adı</label>
+                    <input asp-for="FirmaAdi" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaEposta" class="form-label">Eposta</label>
+                    <input asp-for="FirmaEposta" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaTelefon" class="form-label">Telefon</label>
+                    <input asp-for="FirmaTelefon" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label asp-for="FaturaAdresi" class="form-label">Fatura Adresi</label>
+                    <input asp-for="FaturaAdresi" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaIl" class="form-label">İl</label>
+                    <input asp-for="FirmaIl" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaIlce" class="form-label">İlçe</label>
+                    <input asp-for="FirmaIlce" class="form-control">
+                    </div>
+                <div class="form-group">
+                    <label asp-for="VergiNo" class="form-label">Vergi Numarası</label>
+                    <input asp-for="VergiNo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label asp-for="VergiDairesi" class="form-label">Vergi Dairesi</label>
+                    <input asp-for="VergiDairesi" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label asp-for="VergiIl" class="form-label">Vergi Dairesi / İl</label>
+                    <input asp-for="VergiIl" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label asp-for="VergiIlce" class="form-label">Vergi Dairesi / İlçe</label>
+                    <input asp-for="VergiIlce" class="form-control">
+                </div>
+
+                <input type="hidden" id="changePassword" name="changePassword" value="false" />
+                <div class="form-check form-group">
+                            <input class="form-check-input" type="checkbox" id="changePasswordCheckbox">
+                            <label class="form-check-label" for="changePasswordCheckbox">
+                                Parolayı Değiştir
+                            </label>
+                </div>
+
+                 <div id="passwordFields" style="display: none;">
+                            <div class="form-group">
+                                <label asp-for="FirmaSifre"></label>
+                                <input asp-for="FirmaSifre" class="form-control" disabled />
+                                <span asp-validation-for="FirmaSifre" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="FirmaSifreKontrol"></label>
+                                <input asp-for="FirmaSifreKontrol" class="form-control" disabled />
+                                <span asp-validation-for="FirmaSifreKontrol" class="text-danger"></span>
+                            </div>
+                 </div>
+
+                        <button type="submit" class="btn btn-primary me-2">Güncelle</button>
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary mx-2">İptal</a>
+                        <a asp-controller="KurumsalKullanici" asp-action="Delete" asp-route-id="@Model.KurumsalKullaniciId" class="btn btn-danger ms-2">Hesabı Sil</a>
+                </form>
+       
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/Home.Index.js"></script>
+    <script>
+        document.getElementById('changePasswordCheckbox').addEventListener('change', function () {
+            var passwordFields = document.getElementById('passwordFields');
+            var passwordInputs = passwordFields.querySelectorAll('input');
+            var changePasswordHidden = document.getElementById('changePassword');
+            if (this.checked) {
+                passwordFields.style.display = 'block';
+                passwordInputs.forEach(input => input.disabled = false);
+                changePasswordHidden.value = 'true';
+            } else {
+                passwordFields.style.display = 'none';
+                passwordInputs.forEach(input => input.disabled = true);
+                changePasswordHidden.value = 'false';
+            }
+        });
+    </script>

@@ -1,0 +1,133 @@
+﻿@model RezervasyonViewModel
+
+@{
+    ViewData["Title"] = "Rezervasyon Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row mb-3">
+        @if (User.IsInRole("admin"))
+        {
+            <div class="col-12 mb-3">
+                <a asp-controller="Admin" asp-action="RezervasyonEkle" class="btn btn-primary">Yeni Rezervasyon Oluştur</a>
+            </div>
+        }
+        <form class="form-inline mx-3">
+            <div class="form-group">
+                <select name="filter" id="filter" class="form-control mr-2">
+                    <option value="All">Tüm Rezervasyonlar</option>
+                    <option value="Active">Onaylananlar</option>
+                    <option value="Inactive">Onaylanmayanlar</option>
+                    <option value="Ongoing">Devam Edenler</option>
+                    <option value="Completed">Tamamlananlar</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div id="rezervasyonListContainer" class="rezervasyon-listesi">
+        @foreach (var rezervasyon in Model.Rezervasyonlar)
+        {
+            <div class="rezervasyon-item @(rezervasyon.IsActive ? "aktif" : "pasif") @(rezervasyon.IsCompleted ? "completed" : "")">
+                <div class="rezervasyon-resim">
+                    <img src="@Url.Content($"~/img/{rezervasyon.Arac?.Resim}")" alt="Araç Resmi" />
+                </div>
+                <div class="rezervasyon-detaylar">
+                    <h5>@rezervasyon.Arac?.Marka @rezervasyon.Arac?.AracModel</h5>
+                    <p><strong>Teslim Tarihi:</strong> @rezervasyon.TeslimTarih.ToString("dd-MM-yyyy")</p>
+                    <p><strong>İade Tarihi:</strong> @rezervasyon.IadeTarih.ToString("dd-MM-yyyy")</p>
+                    <p><strong>Teslim Yeri:</strong> @rezervasyon.TeslimYeriAdi</p>
+                    <p><strong>İade Yeri:</strong> @rezervasyon.IadeYeriAdi</p>
+                    <p><strong>Sigorta:</strong> @(rezervasyon.Sigorta ? "Evet" : "Hayır")</p>
+                    <p><strong>Fiyat:</strong> @rezervasyon.Fiyat TL</p>
+                    <p>
+                        <strong>Onay Durumu:</strong>
+                        @if (rezervasyon.IsActive)
+                        {
+                            <span class="aktif-yes">&#10004; Onaylandı</span>
+                        }
+                        else
+                        {
+                            <span class="aktif-no">&#10008; Onaylanmadı</span>
+                        }
+                    </p>
+                    <p>
+                        <strong>Rezervasyonu Yapan:</strong>
+                        @if (rezervasyon.BireyselKullanici != null)
+                        {
+                            @($"{rezervasyon.BireyselKullanici.Ad} {rezervasyon.BireyselKullanici.Soyad}")
+                        }
+                        else if (rezervasyon.KurumsalKullanici != null)
+                        {
+                            @rezervasyon.KurumsalKullanici.FirmaAdi
+                        }
+                    </p>
+                    @if (rezervasyon.IsCompleted)
+                    {
+                        <p class="completed-text col-12"><strong>Bu rezervasyon tamamlanmıştır.</strong></p>
+                    }
+                </div>
+                <div class="rezervasyon-aksiyonlar">
+                    <a href="@Url.Action("RezervasyonDuzenle", "Admin", new { id = rezervasyon.RezervasyonId })"
+                       class="btn btn-primary btn-sm"
+                       onclick="saveDatesToLocalStorage('@rezervasyon.TeslimTarih.ToString("yyyy-MM-ddTHH:mm")', '@rezervasyon.IadeTarih.ToString("yyyy-MM-ddTHH:mm")')">Düzenle</a>
+                    <a asp-controller="Admin" asp-action="RezervasyonSil" asp-route-id="@rezervasyon.RezervasyonId" class="btn btn-danger btn-sm">Sil</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/admin.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#filter').change(function () {
+            $.ajax({
+                url: '@Url.Action("GetFilteredReservationsJson", "Admin")',
+                type: 'GET',
+                data: { filter: $('#filter').val() },
+                success: function (result) {
+                    var container = $('#rezervasyonListContainer');
+                    container.empty();
+
+                    $.each(result, function (index, rezervasyon) {
+                        var card = `
+                                <div class="rezervasyon-item ${rezervasyon.isActive ? "aktif" : "pasif"} ${rezervasyon.isCompleted ? "completed" : ""}">
+                                    <div class="rezervasyon-resim">
+                                        <img src="/img/${rezervasyon.resim}" alt="Araç Resmi" />
+                                    </div>
+                                    <div class="rezervasyon-detaylar">
+                                        <h5>${rezervasyon.marka} ${rezervasyon.aracModel}</h5>
+                                        <p><strong>Teslim Tarihi:</strong> ${rezervasyon.teslimTarih}</p>
+                                        <p><strong>İade Tarihi:</strong> ${rezervasyon.iadeTarih}</p>
+                                        <p><strong>Teslim Yeri:</strong> ${rezervasyon.teslimYeriAdi}</p>
+                                        <p><strong>İade Yeri:</strong> ${rezervasyon.iadeYeriAdi}</p>
+                                        <p><strong>Sigorta:</strong> ${rezervasyon.sigorta ? "Evet" : "Hayır"}</p>
+                                        <p><strong>Fiyat:</strong> ${rezervasyon.fiyat} TL</p>
+                                        <p><strong>Aktif mi?</strong>
+                                            <span class="${rezervasyon.isActive ? "aktif-yes" : "aktif-no"}">
+                                                ${rezervasyon.isActive ? "Evet ✔️" : "Hayır ❌"}
+                                            </span>
+                                        </p>
+                                        ${rezervasyon.isCompleted ? '<p class="completed-text"><strong>Bu rezervasyon tamamlanmıştır.</strong></p>' : ''}
+                                        <p><strong>Rezervasyonu Yapan:</strong> ${rezervasyon.kullaniciAdi}</p>
+                                    </div>
+                                    <div class="rezervasyon-aksiyonlar">
+                                        <a href="/Admin/RezervasyonDuzenle/${rezervasyon.rezervasyonId}" class="btn btn-primary btn-sm" onclick="saveDatesToLocalStorage('${rezervasyon.teslimTarih}', '${rezervasyon.iadeTarih}')">Düzenle</a>
+                                        <a href="/Admin/RezervasyonSil/${rezervasyon.rezervasyonId}" class="btn btn-danger btn-sm">Sil</a>
+                                    </div>
+                                </div>
+                            `;
+                        container.append(card);
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error("Bir hata oluştu: " + error);
+                }
+            });
+        });
+    });
+</script>

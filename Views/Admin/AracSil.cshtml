@@ -1,0 +1,37 @@
+﻿@model AracViewModel
+
+@{
+    ViewData["Title"] = "Araç Sil";
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="col-md-8 col-lg-10">
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0">Aracı Sil</h4>
+                </div>
+                <div class="card-body text-center">
+                    <img src="@Url.Content($"~/img/{Model.Resim}")" alt="Araç Resmi" class="img-fluid mb-3" style="max-height: 300px;">
+                    <h5 class="card-title">@Model.Marka @Model.AracModel</h5>
+                    <p class="card-text"><strong>Motor:</strong> @Model.Motor</p>
+                    <p class="card-text"><strong>Vites:</strong> @Model.Vites</p>
+                    <p class="card-text"><strong>Renk:</strong> @Model.Renk</p>
+                    <p class="card-text">Bu aracı silmek istediğinizden emin misiniz?</p>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <form asp-action="AracSil" asp-route-id="@Model.AracId" method="post" style="margin-right: 10px;">
+                            <button type="submit" class="btn btn-danger">Evet</button>
+                        </form>
+                        <a asp-action="Index" class="btn btn-success" style="margin-left: 10px;">Hayır</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/admin.js"></script>

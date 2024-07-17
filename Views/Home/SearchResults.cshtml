@@ -1,0 +1,47 @@
+﻿@model RezervasyonAramaViewModel
+
+@{
+    ViewData["Title"] = "Uygun Araçlar";
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Arama Sonuçları</h2>
+    @if (Model.Araclar.Any())
+    {
+        <div class="row">
+            @foreach (var arac in Model.Araclar)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/img/@arac.Resim" class="card-img-top" alt="@arac.Marka @arac.AracModel">
+                        <div class="card-body">
+                            <h5 class="card-title">@arac.Marka @arac.AracModel</h5>
+                            <p class="card-text">
+                                <strong>Vites:</strong> @arac.Vites<br>
+                                <strong>Fiyat:</strong> @arac.AracFiyat TL
+                            </p>
+                            <!-- Rezervasyon oluşturma linkine tarih ve yer bilgilerini ekliyoruz -->
+                            <a asp-controller="Rezervasyon" asp-action="Create"
+                               asp-route-aracId="@arac.AracId"
+                               asp-route-teslimTarih="@Model.TeslimTarih.ToString("yyyy-MM-ddTHH:mm")"
+                               asp-route-iadeTarih="@Model.IadeTarih.ToString("yyyy-MM-ddTHH:mm")"
+                               asp-route-teslimYeriId="@Model.TeslimYeriId"
+                               asp-route-iadeYeriId="@Model.IadeYeriId"
+                               class="btn btn-primary">Rezervasyon Yap</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>Uygun araç bulunamadı.</p>
+    }
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/Home.Index.js"></script>

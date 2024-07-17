@@ -1,0 +1,70 @@
+﻿@model KullaniciViewModel
+
+@{
+    ViewData["Title"] = "Kullanıcılar Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2>Bireysel Kullanıcılar Listesi</h2>
+    <p>
+        <a asp-action="Create" asp-controller="Admin" class="btn btn-success">Yeni Bireysel Kullanıcı Ekle</a>
+    </p>
+
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.BireyselKullanicilar.First().Ad)</th>
+                <th>@Html.DisplayNameFor(model => model.BireyselKullanicilar.First().Soyad)</th>
+                <th>@Html.DisplayNameFor(model => model.BireyselKullanicilar.First().Eposta)</th>
+                <th style="width:150px"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.BireyselKullanicilar)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Ad)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Soyad)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Eposta)</td>
+                    <td>
+                        <a asp-action="Edit" asp-controller="Admin" asp-route-id="@item.BireyselKullaniciId" class="btn btn-primary btn-sm">Düzenle</a>
+                        <a asp-action="Delete" asp-controller="Admin" asp-route-id="@item.BireyselKullaniciId" class="btn btn-danger btn-sm">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="container mt-5">
+    <h2>Kurumsal Kullanıcılar Listesi</h2>
+    <p>
+        <a asp-action="CreateKurumsal" asp-controller="Admin" class="btn btn-success">Yeni Kurumsal Kullanıcı Ekle</a>
+    </p>
+
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.KurumsalKullanicilar.First().FirmaAdi)</th>
+                <th>@Html.DisplayNameFor(model => model.KurumsalKullanicilar.First().FirmaEposta)</th>
+                <th>@Html.DisplayNameFor(model => model.KurumsalKullanicilar.First().FirmaTelefon)</th>
+                <th style="width:150px"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.KurumsalKullanicilar)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.FirmaAdi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FirmaEposta)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FirmaTelefon)</td>
+                    <td>
+                        <a asp-action="KurumsalEdit" asp-controller="Admin" asp-route-id="@item.KurumsalKullaniciId" class="btn btn-primary btn-sm">Düzenle</a>
+                        <a asp-action="KurumsalDelete" asp-controller="Admin" asp-route-id="@item.KurumsalKullaniciId" class="btn btn-danger btn-sm">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
