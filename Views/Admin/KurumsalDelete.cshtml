@@ -1,0 +1,38 @@
+﻿@model KurumsalKullaniciViewModel
+
+@{
+    ViewData["Title"] = "Kurumsal Kullanıcı Sil";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card text-center">
+                <div class="card-header bg-warning">
+                    Hesabını Silmek Üzeresiniz
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> Bu kullanıcıyı silmek istediğinize emin misiniz? İşlem geri alınamaz.</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Firma Adı:</strong> @Model.FirmaAdi</li>
+                        <li><strong>Eposta:</strong> @Model.FirmaEposta</li>
+                        <li><strong>Telefon:</strong> @Model.FirmaTelefon</li>
+                    </ul>
+
+                    <div>
+                        <form asp-controller="Admin" asp-action="KurumsalDelete" asp-route-id="@Model.KurumsalKullaniciId" method="post" style="display: inline-block; margin-right: 10px;">
+                            <button type="submit" class="btn btn-danger">Evet</button>
+                        </form>
+                        <a asp-controller="Admin" asp-action="UserIndex" class="btn btn-success" style="display: inline-block;">Hayır</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/admin.js"></script>

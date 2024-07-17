@@ -1,0 +1,78 @@
+﻿@model KurumsalKullaniciViewModel
+
+@{
+    ViewData["Title"] = "Yeni Kurumsal Kullanıcı Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2>Yeni Kurumsal Kullanıcı Ekle</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6 user-form">
+            <form asp-action="CreateKurumsal" method="post">
+                <div class="form-group">
+                    <label asp-for="FirmaEposta" class="control-label"></label>
+                    <input asp-for="FirmaEposta" class="form-control" />
+                    <span asp-validation-for="FirmaEposta" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaSifre" class="control-label"></label>
+                    <input asp-for="FirmaSifre" class="form-control" type="password" />
+                    <span asp-validation-for="FirmaSifre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaSifreKontrol" class="control-label"></label>
+                    <input asp-for="FirmaSifreKontrol" class="form-control" type="password" />
+                    <span asp-validation-for="FirmaSifreKontrol" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaAdi" class="control-label"></label>
+                    <input asp-for="FirmaAdi" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="VergiNo" class="control-label"></label>
+                    <input asp-for="VergiNo" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="VergiDairesi" class="control-label"></label>
+                    <input asp-for="VergiDairesi" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaIl" class="control-label"></label>
+                    <input asp-for="FirmaIl" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaIlce" class="control-label"></label>
+                    <input asp-for="FirmaIlce" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="VergiIl" class="control-label"></label>
+                    <input asp-for="VergiIl" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="VergiIlce" class="control-label"></label>
+                    <input asp-for="VergiIlce" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirmaTelefon" class="control-label"></label>
+                    <input asp-for="FirmaTelefon" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="FaturaAdresi" class="control-label"></label>
+                    <input asp-for="FaturaAdresi" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Kaydet" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="mt-3">
+        <a asp-action="UserIndex" class="btn btn-secondary">Geri Dön</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/admin.js"></script>

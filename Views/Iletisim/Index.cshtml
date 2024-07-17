@@ -1,0 +1,102 @@
+﻿@model IletisimViewModel
+
+@{
+    ViewData["Title"] = "İletişim";
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Bizimle İletişime Geçin</h4>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.Message != null)
+                    {
+                        <div class="alert alert-success" role="alert">
+                            @ViewBag.Message
+                        </div>
+                    }
+                    <form asp-action="Index" method="post" novalidate>
+                        <div class="form-group">
+                            <label asp-for="IletisimAdSoyad">Ad Soyad</label>
+                            <input asp-for="IletisimAdSoyad" class="form-control" />
+                            <span asp-validation-for="IletisimAdSoyad" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="IletisimEposta">E-Posta</label>
+                            <input asp-for="IletisimEposta" class="form-control" />
+                            <span asp-validation-for="IletisimEposta" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Telefon">Telefon</label>
+                            <input asp-for="Telefon" class="form-control" />
+                            <span asp-validation-for="Telefon" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Mesaj">Mesaj</label>
+                            <textarea asp-for="Mesaj" class="form-control" rows="5"></textarea>
+                            <span asp-validation-for="Mesaj" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Ofislerimiz</h4>
+                    <p>Aşağıdaki haritadan ofislerimizi görebilirsiniz.</p>
+                    <div id="map" style="height: 400px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/Home.Index.js"></script>
+@section Scripts {
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        function initMap() {
+            const map = L.map('map').setView([38.9637, 35.2433], 6); // Türkiye'nin ortasına odaklanacak
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            const locations = [
+                { lat: 41.0938, lng: 28.8024, title: "İstanbul, Başakşehir" },
+                { lat: 38.4622, lng: 27.2056, title: "İzmir, Bornova" },
+                { lat: 37.8481, lng: 27.8459, title: "Aydın, Efeler" },
+                { lat: 39.9208, lng: 32.8541, title: "Ankara, Çankaya" },
+                { lat: 37.0662, lng: 37.3833, title: "Gaziantep, Şehitkamil" },
+                { lat: 36.6514, lng: 29.1235, title: "Muğla, Fethiye" },
+                { lat: 36.2019, lng: 29.6393, title: "Antalya, Kaş" },
+                { lat: 40.6013, lng: 43.0960, title: "Kars, Merkez" },
+                { lat: 40.2215, lng: 28.9862, title: "Bursa, Nilüfer" },
+                { lat: 37.8662, lng: 32.4833, title: "Konya, Karatay" }
+            ];
+
+            locations.forEach(location => {
+                L.marker([location.lat, location.lng])
+                    .addTo(map)
+                    .bindPopup(location.title);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initMap);
+    </script>
+}

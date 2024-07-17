@@ -1,0 +1,244 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar-dark {
+    background-color: #555555;
+}
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffffff;
+    }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #f09721;
+        }
+
+.footer {
+    background-color: #555555;
+}
+
+    .footer span {
+        color: #ffffff;
+    }
+
+main {
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.rezervasyon-listesi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rezervasyon-item {
+    display: flex;
+    align-items: center;
+    background-color: #EEEDEB;
+    padding: 15px;
+    border-radius: 5px;
+    width: calc(50% - 10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+    .rezervasyon-item:hover {
+        transform: scale(1.02);
+    }
+
+    .rezervasyon-item.aktif {
+        border: 2px dashed #28a745;
+    }
+
+    .rezervasyon-item.pasif {
+        border: 2px dashed #dc3545;
+        opacity: 0.5; 
+    }
+    .rezervasyon-item.completed {
+        opacity: 0.5; 
+        background-color: #f8d7da; 
+    }
+
+.completed-text {
+    font-size: 1.2rem; 
+    margin-top: 10px; 
+    display: block;
+}
+
+.rezervasyon-resim img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.rezervasyon-detaylar {
+    flex-grow: 1;
+}
+
+    .rezervasyon-detaylar h5 {
+        color: #333333;
+        margin-bottom: 5px;
+    }
+
+    .rezervasyon-detaylar p {
+        color: #555555;
+        margin-bottom: 3px;
+    }
+
+.rezervasyon-aksiyonlar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.araclar-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.araclar-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #EEEDEB;
+    padding: 15px;
+    border-radius: 5px;
+    width: calc(50% - 10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+    .araclar-card:hover {
+        transform: scale(1.02);
+    }
+
+    .araclar-card.disabled {
+        opacity: 0.5;
+    }
+
+.araclar-card-img-top {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.araclar-card-body {
+    flex-grow: 1;
+}
+
+    .araclar-card-body h5 {
+        color: #333333;
+        margin-bottom: 5px;
+    }
+
+    .araclar-card-body p {
+        color: #555555;
+        margin-bottom: 3px;
+    }
+
+.musaitlik-yes {
+    color: #28a745;
+}
+
+.musaitlik-no {
+    color: #dc3545;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+.btn-danger {
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+
+    .btn-danger:hover {
+        background-color: #c9302c;
+        border-color: #c9302c;
+    }
+
+.user-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .user-form h2 {
+        color: #333333;
+        margin-bottom: 20px;
+    }
+
+    .user-form .form-group label {
+        color: #555555;
+    }
+
+    .user-form .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .user-form .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+    .user-form .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+        .user-form .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
+.aktif-yes {
+    color: #28a745;
+}
+
+.aktif-no {
+    color: #dc3545;
+}
+
+.kullanici-sil-card {
+    text-align: center;
+}
+
+.kullanici-sil-card-header {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.table-warning {
+    background-color: #fff3cd;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+    .btn-info:hover {
+        background-color: #138496;
+        border-color: #117a8b;
+    }

@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Admin Paneli Ana Sayfa";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+<div class="row">
+    <div class="col-md-4">
+        <div class="card text-white bg-secondary mb-3">
+            <div class="card-header">Kullanıcılar</div>
+            <div class="card-body">
+                <h5 class="card-title">Kullanıcı Listesi</h5>
+                <p class="card-text">Kullanıcı bilgilerini görüntüleyebilir ve düzenleyebilirsiniz.</p>
+                <a href="@Url.Action("UserIndex", "Admin")" class="btn btn-primary">Görüntüle</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-secondary mb-3">
+            <div class="card-header">Rezervasyonlar</div>
+            <div class="card-body">
+                <h5 class="card-title">Rezervasyon Listesi</h5>
+                <p class="card-text">Rezervasyon bilgilerini görüntüleyebilir ve düzenleyebilirsiniz.</p>
+                <a href="@Url.Action("Rezervasyonlar", "Admin")" class="btn btn-primary">Görüntüle</a>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">Araçlar</div>
+                <div class="card-body">
+                    <h5 class="card-title">Araç Listesi</h5>
+                    <p class="card-text">Araç bilgilerini görüntüleyebilir ve düzenleyebilirsiniz.</p>
+                    <a href="@Url.Action("Araclar", "Admin")" class="btn btn-primary">Görüntüle</a>
+                </div>
+            </div>
+        </div>
+</div>
+</div>

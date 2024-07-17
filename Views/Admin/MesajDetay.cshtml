@@ -1,0 +1,35 @@
+﻿@model IletisimViewModel
+
+@{
+    ViewData["Title"] = "Mesaj Detayları";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4>Mesaj Detayları</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong>Ad Soyad:</strong> @Model.IletisimAdSoyad</p>
+                    <p><strong>E-Posta:</strong> @Model.IletisimEposta</p>
+                    <p><strong>Telefon:</strong> @Model.Telefon</p>
+                    <p><strong>Mesaj:</strong> @Model.Mesaj</p>
+                </div>
+                <div class="card-footer">
+                    <form asp-controller="Admin" asp-action="OkunduOlarakIsaretle" method="post" class="d-inline">
+                        <input type="hidden" name="id" value="@Model.IletisimId" />
+                        <button type="submit" class="btn btn-success">Okundu Olarak İşaretle</button>
+                    </form>
+                    <form asp-controller="Admin" asp-action="MesajSil" method="post" class="d-inline">
+                        <input type="hidden" name="id" value="@Model.IletisimId" />
+                        <button type="submit" class="btn btn-danger">Sil</button>
+                    </form>
+                    <a asp-controller="Admin" asp-action="Mesajlar" class="btn btn-secondary">Geri Dön</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,187 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Rent_A_Car
+build_property.RootNamespace = Rent_A_Car
+build_property.ProjectDir = C:\Users\Ahmet Demiroğlu\Desktop\RentACar\Rent A Car\Rent A Car\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Ahmet Demiroğlu\Desktop\RentACar\Rent A Car\Rent A Car
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/AracDuzenle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXJhY0R1emVubGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/AracEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXJhY0VrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/Araclar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXJhY2xhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/AracSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXJhY1NpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/CreateKurumsal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlS3VydW1zYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/KurumsalDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VydW1zYWxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/KurumsalEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VydW1zYWxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/MesajDetay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWVzYWpEZXRheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/Mesajlar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWVzYWpsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/RezervasyonDuzenle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmV6ZXJ2YXN5b25EdXplbmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/RezervasyonEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmV6ZXJ2YXN5b25Fa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/Rezervasyonlar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmV6ZXJ2YXN5b25sYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/RezervasyonSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmV6ZXJ2YXN5b25TaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Admin/UserIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Arac/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhY1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Arac/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhY1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Arac/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhY1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Arac/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhY1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/BireyselKullanici/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlyZXlzZWxLdWxsYW5pY2lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/BireyselKullanici/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlyZXlzZWxLdWxsYW5pY2lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/BireyselKullanici/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlyZXlzZWxLdWxsYW5pY2lcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/BireyselKullanici/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlyZXlzZWxLdWxsYW5pY2lcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Home/SearchResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2hSZXN1bHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Iletisim/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWxldGlzaW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/KurumsalKullanici/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VydW1zYWxLdWxsYW5pY2lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/KurumsalKullanici/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VydW1zYWxLdWxsYW5pY2lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/KurumsalKullanici/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VydW1zYWxLdWxsYW5pY2lcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/KurumsalKullanici/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VydW1zYWxLdWxsYW5pY2lcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Rezervasyon/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YXN5b25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Rezervasyon/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YXN5b25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Rezervasyon/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YXN5b25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Rezervasyon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YXN5b25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet Demiroğlu/Desktop/RentACar/Rent A Car/Rent A Car/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ghoc7780ex
