@@ -1,0 +1,465 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Rent A Car.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Rent A Car.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\css\\style-admin.css",
+      "PackagePath": "staticwebassets\\css\\style-admin.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\A_black_image.jpg",
+      "PackagePath": "staticwebassets\\img\\A_black_image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\Logo.png",
+      "PackagePath": "staticwebassets\\img\\Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\bg.jpg",
+      "PackagePath": "staticwebassets\\img\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\kutu1.png",
+      "PackagePath": "staticwebassets\\img\\kutu1.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\kutu2.png",
+      "PackagePath": "staticwebassets\\img\\kutu2.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\kutu3.png",
+      "PackagePath": "staticwebassets\\img\\kutu3.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\kutu4.png",
+      "PackagePath": "staticwebassets\\img\\kutu4.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\kutu5.png",
+      "PackagePath": "staticwebassets\\img\\kutu5.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\kutu6.png",
+      "PackagePath": "staticwebassets\\img\\kutu6.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\pngwing.com_71f67d23-1389-4e2f-aa43-f0c45d57f1f2.png",
+      "PackagePath": "staticwebassets\\img\\pngwing.com_71f67d23-1389-4e2f-aa43-f0c45d57f1f2.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-AMG.png",
+      "PackagePath": "staticwebassets\\img\\resim-AMG.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-AMG_626e8a58-4698-4bd8-b138-f2eb4c7ffa89.png",
+      "PackagePath": "staticwebassets\\img\\resim-AMG_626e8a58-4698-4bd8-b138-f2eb4c7ffa89.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-AMG_626e8a58-4698-4bd8-b138-f2eb4c7ffa89_6a53a136-a652-49cf-acc7-2aec7def0cf2.png",
+      "PackagePath": "staticwebassets\\img\\resim-AMG_626e8a58-4698-4bd8-b138-f2eb4c7ffa89_6a53a136-a652-49cf-acc7-2aec7def0cf2.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-AMG_626e8a58-4698-4bd8-b138-f2eb4c7ffa89_7ff33142-2e5b-41e1-a999-59de39756b50.png",
+      "PackagePath": "staticwebassets\\img\\resim-AMG_626e8a58-4698-4bd8-b138-f2eb4c7ffa89_7ff33142-2e5b-41e1-a999-59de39756b50.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-AMG_83682b58-fdd1-4a97-aa4e-c4dd3a670f79.png",
+      "PackagePath": "staticwebassets\\img\\resim-AMG_83682b58-fdd1-4a97-aa4e-c4dd3a670f79.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-chr.png",
+      "PackagePath": "staticwebassets\\img\\resim-chr.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-chr_0489ef15-9141-44c6-9186-8d44cc4ad90d.png",
+      "PackagePath": "staticwebassets\\img\\resim-chr_0489ef15-9141-44c6-9186-8d44cc4ad90d.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-chr_f1d1837f-1133-47fc-9056-3b8b79086a9a.png",
+      "PackagePath": "staticwebassets\\img\\resim-chr_f1d1837f-1133-47fc-9056-3b8b79086a9a.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-egea.png",
+      "PackagePath": "staticwebassets\\img\\resim-egea.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-egea_01d525d9-90bc-43c4-85b2-e46b835c40d3.png",
+      "PackagePath": "staticwebassets\\img\\resim-egea_01d525d9-90bc-43c4-85b2-e46b835c40d3.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-q7.png",
+      "PackagePath": "staticwebassets\\img\\resim-q7.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-q7_6b8eafeb-6b03-4a30-8158-e1e9d76f4b88.png",
+      "PackagePath": "staticwebassets\\img\\resim-q7_6b8eafeb-6b03-4a30-8158-e1e9d76f4b88.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-tucson.png",
+      "PackagePath": "staticwebassets\\img\\resim-tucson.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-tucson_47f68af3-ef03-4737-9c00-87080e39b6fd.png",
+      "PackagePath": "staticwebassets\\img\\resim-tucson_47f68af3-ef03-4737-9c00-87080e39b6fd.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-tucson_ffc6dc38-7016-4516-a6c1-29e0a51f0466.png",
+      "PackagePath": "staticwebassets\\img\\resim-tucson_ffc6dc38-7016-4516-a6c1-29e0a51f0466.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim-tucson_ffc6dc38-7016-4516-a6c1-29e0a51f0466_1b228ce4-da85-4afe-8253-23346628c2ed.png",
+      "PackagePath": "staticwebassets\\img\\resim-tucson_ffc6dc38-7016-4516-a6c1-29e0a51f0466_1b228ce4-da85-4afe-8253-23346628c2ed.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim.png",
+      "PackagePath": "staticwebassets\\img\\resim.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim_1d2c7dce-0e73-4ebd-895e-c0b8ab8bada1.png",
+      "PackagePath": "staticwebassets\\img\\resim_1d2c7dce-0e73-4ebd-895e-c0b8ab8bada1.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim_720bac97-55c7-480b-baa3-375678df28c1.png",
+      "PackagePath": "staticwebassets\\img\\resim_720bac97-55c7-480b-baa3-375678df28c1.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\resim_fe3f7155-4641-4c82-8bec-0924471560f1.png",
+      "PackagePath": "staticwebassets\\img\\resim_fe3f7155-4641-4c82-8bec-0924471560f1.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\slide1.png",
+      "PackagePath": "staticwebassets\\img\\slide1.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\slide2.png",
+      "PackagePath": "staticwebassets\\img\\slide2.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\slide3.png",
+      "PackagePath": "staticwebassets\\img\\slide3.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\slide4.png",
+      "PackagePath": "staticwebassets\\img\\slide4.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\slide5.png",
+      "PackagePath": "staticwebassets\\img\\slide5.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\img\\slide6.png",
+      "PackagePath": "staticwebassets\\img\\slide6.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\js\\admin.js",
+      "PackagePath": "staticwebassets\\js\\admin.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTBold.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTBold.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTBoldCn.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTBoldCn.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTBoldIt.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTBoldIt.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTHeavy.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTHeavy.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTHeavyIt.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTHeavyIt.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTLight.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTLight.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTLightIt.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTLightIt.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTMedium.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTMedium.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTMediumCn.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTMediumCn.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTMediumIt.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTMediumIt.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTRg.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTRg.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTRgCn.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTRgCn.TTF"
+    },
+    {
+      "Id": "C:\\Users\\Ahmet Demiroğlu\\Desktop\\Rent A Car\\Rent A Car\\Rent A Car\\wwwroot\\sst-font\\SSTRgIt.TTF",
+      "PackagePath": "staticwebassets\\sst-font\\SSTRgIt.TTF"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Rent A Car.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Rent A Car.props",
+      "PackagePath": "build\\Rent A Car.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Rent A Car.props",
+      "PackagePath": "buildMultiTargeting\\Rent A Car.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Rent A Car.props",
+      "PackagePath": "buildTransitive\\Rent A Car.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,65 @@
+﻿@model BireyselKullaniciViewModel
+
+
+@{
+    ViewData["Title"] = "Kayıt Ol";
+    Layout = "_Layout";
+}        
+
+        <!-- KAYIT FORMU -->
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <div style="width: 100%; max-width: 500px;">
+                <h2 style="text-align: center; margin-bottom: 20px;">Kayıt Formu</h2>
+                <ul class="nav nav-tabs" style="width: 100%; margin-bottom: 20px;">
+                    <li class="nav-item" style="width: 50%;">
+                        <a class="nav-link active" style="color: #fff; background-color: #0056b3; display: flex; justify-content: center; align-items: center; text-align: center; padding: 10px;" asp-controller="BireyselKullanici" asp-action="Register">Bireysel</a>
+                    </li>
+                    <li class="nav-item" style="width: 50%;">
+                        <a class="nav-link" style="color: #fff; background-color: #e9ecef; display: flex; justify-content: center; align-items: center; text-align: center; padding: 10px;" asp-controller="KurumsalKullanici" asp-action="Register">Kurumsal</a>
+                    </li>
+                </ul>
+            <form asp-action="Register" asp-controller="BireyselKullanici" method="post">
+                <div class="mb-3">
+                    <label asp-for="Ad" class="form-label"></label>
+                    <input asp-for="Ad" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Soyad" class="form-label"></label>
+                    <input asp-for="Soyad" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Eposta" class="form-label"></label>
+                    <input asp-for="Eposta" class="form-control" type="email">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Telefon" class="form-label"></label>
+                    <input asp-for="Telefon" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Adres" class="form-label"></label>
+                    <input asp-for="Adres" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="KimlikNo" class="form-label">Kimlik Numarası</label>
+                    <input asp-for="KimlikNo" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="DogumTarihi" class="form-label">Doğum Tarihi</label>
+                    <input asp-for="DogumTarihi" class="form-control" type="date">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Sifre" class="form-label"></label>
+                    <input asp-for="Sifre" class="form-control" type="password">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="SifreKontrol" class="form-label"></label>
+                    <input asp-for="SifreKontrol" class="form-control" type="password">
+                </div>
+                <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+            </form>
+            </div>
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/Home.Index.js"></script>

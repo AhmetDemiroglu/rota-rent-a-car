@@ -1,0 +1,46 @@
+﻿@model IEnumerable<IletisimViewModel>
+
+@{
+    ViewData["Title"] = "Mesajlar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h2>Mesajlar</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Ad Soyad</th>
+                        <th>Tarih</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var mesaj in Model)
+                    {
+                        <tr class="@(!mesaj.IsRead ? "table-warning" : "")">
+                            <td>@mesaj.IletisimAdSoyad</td>
+                            <td>@mesaj.SentDate.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>
+                                <a asp-controller="Admin" asp-action="MesajDetay" asp-route-id="@mesaj.IletisimId" class="btn btn-info btn-sm">Detay</a>
+                                @if (!mesaj.IsRead)
+                                {
+                                    <form asp-controller="Admin" asp-action="OkunduOlarakIsaretle" method="post" class="d-inline">
+                                        <input type="hidden" name="id" value="@mesaj.IletisimId" />
+                                        <button type="submit" class="btn btn-success btn-sm">Okundu Olarak İşaretle</button>
+                                    </form>
+                                }
+                                <form asp-controller="Admin" asp-action="MesajSil" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@mesaj.IletisimId" />
+                                    <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

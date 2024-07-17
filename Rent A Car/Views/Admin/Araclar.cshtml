@@ -1,0 +1,121 @@
+﻿@model AracViewModel
+
+@{
+    ViewData["Title"] = "Araçlar";
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-5 araclar-container">
+    <div class="row mb-3">
+        <!-- Yeni araç ekleme butonu -->
+        <div class="col-12 mb-3">
+            <a asp-controller="Admin" asp-action="AracEkle" class="btn btn-primary">Yeni Araç Ekle</a>
+        </div>
+        <!-- Kategori seçimi formu -->
+        <form class="form-inline mx-3">
+            <div class="form-group">
+                <select name="kategori" id="kategori" class="form-control mr-2">
+                    <option value="Tüm Araçlar">Tüm Araçlar</option>
+                    <option value="Ekonomik">Ekonomik Araçlar</option>
+                    <option value="Lüks">Lüks Araçlar</option>
+                    <option value="Premium">Premium Araçlar</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div id="aracListContainer" class="row araclar-row">
+        @foreach (var arac in Model.Araclar)
+        {
+                <div class="col-5 py-0 px-2 card my-3 mx-4 araclar-card @(arac.Musaitlik == true ? "" : "disabled")">
+                    <img class="card-img-top araclar-card-img-top" src="@Url.Content($"~/img/{arac.Resim}")" alt="Araç Resmi">
+                    <div class="card-body araclar-card-body">
+                        <h5 class="card-title">@arac.Marka @arac.AracModel</h5>
+                        <p class="card-text"><strong>Motor:</strong> @arac.Motor</p>
+                        <p class="card-text"><strong>Vites:</strong> @arac.Vites</p>
+                        <p class="card-text"><strong>Koltuk:</strong> @arac.Koltuk</p>
+                        <p class="card-text"><strong>Renk:</strong> @arac.Renk</p>
+                        <p class="card-text"><strong>Kilometre:</strong> @arac.Km</p>
+                        <p class="card-text"><strong>Şehir:</strong> @arac.Sehir?.IlAdi, @arac.Sehir?.IlceAdi</p>
+                        <p class="card-text"><strong>Kategori:</strong> @arac.Kategori?.KategoriAdi</p>
+                        <p class="card-text"><strong>Fiyat:</strong> @arac.AracFiyat ₺/gün</p>
+                        <p class="card-text">
+                            <strong>Müsait mi:</strong>
+                            <span class="@(arac.Musaitlik == true ? "musaitlik-yes" : "musaitlik-no")">
+                                @(arac.Musaitlik == true ? "Evet ✔️" : "Hayır ❌")
+                            </span>
+                        </p>
+                        <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                            <a asp-controller="Admin" asp-action="AracDuzenle" asp-route-id="@arac.AracId" type="button" class="btn btn-sm btn-outline-primary">Düzenle</a>
+                            <a asp-controller="Admin" asp-action="AracSil" asp-route-id="@arac.AracId" type="button" class="btn btn-sm btn-outline-danger">Sil</a>
+                        </div>
+                    </div>
+            </div>
+            }
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/admin.js"></script>
+<script>
+    $(document).ready(function () {
+        // ViewBag.SelectedKategori'den gelen seçili kategoriyi al
+        var selectedKategori = "@ViewBag.SelectedKategori";
+        // Select elementinde ilgili kategoriye göre selected niteliğini ayarla
+        $('#kategori option').each(function () {
+            if ($(this).val() === selectedKategori) {
+                $(this).attr('selected', 'selected');
+            }
+        });
+
+        // Kategori değiştiğinde AJAX ile listeyi güncelle
+        $('#kategori').change(function () {
+            $.ajax({
+                url: '@Url.Action("GetFilteredCarsJson", "Admin")',
+                type: 'GET',
+                data: { kategori: $('#kategori').val() },
+                success: function (result) {
+                    console.log(result); // Gelen veriyi konsola yazdırarak kontrol edelim
+                    var container = $('#aracListContainer');
+                    container.empty();
+
+                    $.each(result, function (index, arac) {
+                        var card = `
+                                    <div class="col-5 py-0 px-2 card my-3 mx-4 araclar-card ${arac.musaitlik ? "" : "disabled"}">
+                                        <img class="card-img-top araclar-card-img-top" src="/img/${arac.resim}" alt="Araç Resmi">
+                                        <div class="card-body araclar-card-body">
+                                            <h5 class="card-title">${arac.marka} ${arac.aracModel}</h5>
+                                            <p class="card-text"><strong>Motor:</strong> ${arac.motor}</p>
+                                            <p class="card-text"><strong>Vites:</strong> ${arac.vites}</p>
+                                            <p class="card-text"><strong>Koltuk:</strong> ${arac.koltuk}</p>
+                                            <p class="card-text"><strong>Renk:</strong> ${arac.renk}</p>
+                                            <p class="card-text"><strong>Kilometre:</strong> ${arac.km}</p>
+                                            <p class="card-text"><strong>Şehir:</strong> ${arac.sehir}</p>
+                                            <p class="card-text"><strong>Kategori:</strong> ${arac.kategori}</p>
+                                            <p class="card-text"><strong>Fiyat:</strong> ${arac.aracFiyat} ₺/gün</p>
+                                            <p class="card-text"><strong>Müsait mi:</strong>
+                                                <span class="${arac.musaitlik ? "musaitlik-yes" : "musaitlik-no"}">
+                                                    ${arac.musaitlik ? "Evet ✔️" : "Hayır ❌"}
+                                                </span>
+                                            </p>
+                                            <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                                                <a href="/Admin/Edit/${arac.aracId}" class="btn btn-sm btn-outline-primary">Düzenle</a>
+                                                <a href="/Admin/Delete/${arac.aracId}" class="btn btn-sm btn-outline-danger">Sil</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            `;
+                        container.append(card);
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error("Bir hata oluştu: " + error);
+                }
+            });
+        });
+    });
+</script>
+
+

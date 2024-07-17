@@ -1,0 +1,36 @@
+﻿@model RezervasyonEkleViewModel
+
+@{
+    ViewData["Title"] = "Rezervasyon Sil";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row justify-content-center align-items-center mt-5" style="min-height: 100vh;">
+        <div class="col-md-8 col-lg-10">
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0">Rezervasyonu Sil</h4>
+                </div>
+                <div class="card-body text-center">
+                    <img src="@Url.Content($"~/img/{Model.Arac?.Resim}")" alt="Araç Resmi" class="img-fluid mb-3" style="max-height: 300px;">
+                    <h5 class="card-title">@Model.Arac?.Marka @Model.Arac?.AracModel</h5>
+                    <p class="card-text"><strong>Teslim Yeri:</strong> @Model.TeslimYeriAdi</p>
+                    <p class="card-text"><strong>Teslim Tarihi:</strong> @Model.TeslimTarih.ToString("dd-MM-yyyy")</p>
+                    <p class="card-text"><strong>İade Yeri:</strong> @Model.IadeYeriAdi</p>
+                    <p class="card-text"><strong>İade Tarihi:</strong> @Model.IadeTarih.ToString("dd-MM-yyyy")</p>
+                    <p class="card-text"><strong>Sigorta:</strong> @(Model.Sigorta ? "Evet" : "Hayır")</p>
+                    <p class="card-text"><strong>Fiyat:</strong> @Model.Fiyat TL</p>
+                    <p class="card-text">Bu rezervasyonu silmek istediğinizden emin misiniz?</p>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <form asp-controller="Admin" asp-action="RezervasyonSil" method="post" style="margin-right: 10px;">
+                            <input type="hidden" asp-for="RezervasyonId" />
+                            <button type="submit" class="btn btn-danger">Evet</button>
+                        </form>
+                        <a asp-controller="Admin" asp-action="Rezervasyonlar" class="btn btn-success" style="margin-left: 10px;">Hayır</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

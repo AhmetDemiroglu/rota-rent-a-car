@@ -1,0 +1,124 @@
+﻿@model RezervasyonEkleViewModel
+
+@{
+    ViewData["Title"] = "Rezervasyon Oluştur";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Rezervasyon Oluştur</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="Admin" asp-action="RezervasyonEkle" method="post" novalidate>
+                        <div class="form-group">
+                            <label asp-for="SelectedKullaniciId">Kullanıcı Seçimi</label>
+                            <select asp-for="SelectedKullaniciId" asp-items="@Model.KullaniciSecenekleri" class="form-control">
+                                <option value="">Lütfen bir kullanıcı seçiniz</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TeslimTarih">Teslim Tarihi ve Saati</label>
+                            <input asp-for="TeslimTarih" id="TeslimTarih" class="form-control" type="datetime-local" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="IadeTarih">İade Tarihi ve Saati</label>
+                            <input asp-for="IadeTarih" id="IadeTarih" class="form-control" type="datetime-local" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TeslimYeriId">Teslim Yeri</label>
+                            <select asp-for="TeslimYeriId" asp-items="@Model.TeslimYeriSecenekleri" id="TeslimYeri" class="form-control">
+                                <option value="">Lütfen bir teslim yeri seçiniz</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="IadeYeriId">İade Yeri</label>
+                            <select asp-for="IadeYeriId" asp-items="@Model.IadeYeriSecenekleri" id="IadeYeri" class="form-control">
+                                <option value="">Lütfen bir iade yeri seçiniz</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="AracId">Araç Seçimi</label>
+                            <select asp-for="AracId" id="AracId" class="form-control">
+                                <option value="">Lütfen bir araç seçiniz</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Sigorta">
+                                <input asp-for="Sigorta" type="checkbox" /> Sigorta
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="IsActive" class="form-check-input" id="IsActive" />
+                            <label asp-for="IsActive" class="form-check-label">Aktif</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Rezervasyon Yap</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/admin.js"></script>
+<script>
+    $(document).ready(function () {
+        function roundToNearest(minutes, date = new Date()) {
+            const ms = 1000 * 60 * minutes;
+            const roundedDate = new Date(Math.ceil(date.getTime() / ms) * ms);
+            roundedDate.setMinutes(roundedDate.getMinutes() - roundedDate.getTimezoneOffset());
+            return roundedDate.toISOString().slice(0, 16);
+        }
+
+        function setInitialValues() {
+            const teslimTarihInput = document.getElementById('TeslimTarih');
+            const iadeTarihInput = document.getElementById('IadeTarih');
+
+            if (!teslimTarihInput.value) {
+                teslimTarihInput.value = roundToNearest(30);
+            }
+            if (!iadeTarihInput.value) {
+                const teslimTarih = new Date(teslimTarihInput.value);
+                const iadeTarih = new Date(teslimTarih.getTime() + (1000 * 60 * 60 * 24));
+                iadeTarihInput.value = roundToNearest(30, iadeTarih);
+            }
+        }
+
+        setInitialValues();
+
+        $('#TeslimYeri, #TeslimTarih, #IadeTarih').change(function () {
+            var teslimYeriId = $('#TeslimYeri').val();
+            var teslimTarihi = $('#TeslimTarih').val();
+            var iadeTarihi = $('#IadeTarih').val();
+            if (teslimTarihi && iadeTarihi && teslimYeriId) {
+                $.ajax({
+                    url: '@Url.Action("GetAvailableCars", "Admin")',
+                    type: 'GET',
+                    data: { teslimTarihi: teslimTarihi, iadeTarihi: iadeTarihi, teslimYeriId: teslimYeriId },
+                    success: function (data) {
+                        $('#AracId').empty().append('<option value="">Lütfen bir araç seçiniz</option>');
+                        $.each(data, function (i, item) {
+                            $('#AracId').append($('<option>', {
+                                value: item.value,
+                                text: item.text
+                            }));
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Bir hata oluştu: " + error);
+                        $('#AracId').empty().append('<option value="">Araç yüklenemedi</option>');
+                    }
+                });
+            }
+        });
+
+        // Sayfa yüklendiğinde ilk kez araçları yükle
+        $('#TeslimYeri').trigger('change');
+    });
+</script>

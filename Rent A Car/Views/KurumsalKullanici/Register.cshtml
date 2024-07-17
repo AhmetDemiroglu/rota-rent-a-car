@@ -1,0 +1,78 @@
+﻿@model KurumsalKullaniciViewModel
+
+
+@{
+    ViewData["Title"] = "Kayıt Ol";
+    Layout = "_Layout";
+}
+   
+        <!-- KAYIT FORMU -->
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <div style="width: 100%; max-width: 500px;">
+                <h2 style="text-align: center; margin-bottom: 20px;">Kayıt Formu</h2>
+                <ul class="nav nav-tabs" style="width: 100%; margin-bottom: 20px;">
+                    <li class="nav-item" style="width: 50%;">
+                        <a class="nav-link" style="color: #fff; background-color: #e9ecef; display: flex; justify-content: center; align-items: center; text-align: center; padding: 10px;" asp-controller="BireyselKullanici" asp-action="Register">Bireysel</a>
+                    </li>
+                    <li class="nav-item" style="width: 50%;">
+                        <a class="nav-link active" style="color: #fff; background-color: #0056b3; display: flex; justify-content: center; align-items: center; text-align: center; padding: 10px;" asp-controller="KurumsalKullanici" asp-action="Register">Kurumsal</a>
+                    </li>
+                </ul>
+            <form asp-action="Register" asp-controller="KurumsalKullanici" method="post"> 
+                <div class="mb-3">
+                    <label asp-for="FirmaAdi" class="form-label">Firma Adı</label>
+                    <input asp-for="FirmaAdi" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="FirmaEposta" class="form-label">Eposta</label>
+                    <input asp-for="FirmaEposta" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="FirmaTelefon" class="form-label">Telefon</label>
+                    <input asp-for="FirmaTelefon" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="FaturaAdresi" class="form-label">Fatura Adresi</label>
+                    <input asp-for="FaturaAdresi" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="FirmaIl" class="form-label">İl</label>
+                    <input asp-for="FirmaIl" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="FirmaIlce" class="form-label">İlçe</label>
+                    <input asp-for="FirmaIlce" class="form-control">
+                    </div>
+                <div class="mb-3">
+                    <label asp-for="VergiNo" class="form-label">Vergi Numarası</label>
+                    <input asp-for="VergiNo" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="VergiDairesi" class="form-label">Vergi Dairesi</label>
+                    <input asp-for="VergiDairesi" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="VergiIl" class="form-label">Vergi Dairesi / İl</label>
+                    <input asp-for="VergiIl" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="VergiIlce" class="form-label">Vergi Dairesi / İlçe</label>
+                    <input asp-for="VergiIlce" class="form-control">
+                </div>               
+                <div class="mb-3">
+                    <label asp-for="FirmaSifre" class="form-label">Parola</label>
+                    <input asp-for="FirmaSifre" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="FirmaSifreKontrol" class="form-label">Parola Tekrar</label>
+                    <input asp-for="FirmaSifreKontrol" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+            </form>
+            </div>
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/Home.Index.js"></script>
