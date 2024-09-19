@@ -1,4 +1,5 @@
-Rent-A-Car Web Uygulaması
+RENT A CAR WEB UYGULAMASI
+
 Bu proje, Rent A Car hizmeti veren bir web uygulamasıdır. Proje, kullanıcılara araç kiralama, rezervasyon yönetimi, ve araç bilgilerini görüntüleme gibi işlevler sunar. Admin paneli ile yönetim kolaylığı sağlar ve kullanıcılara modern, kullanıcı dostu bir arayüz sunar.
 
 Proje Gereksinimleri:
