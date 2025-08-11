@@ -1,69 +1,70 @@
-RENT A CAR WEB UYGULAMASI
+# Rota Rent a Car - ASP.NET Core MVC Araç Kiralama Projesi
 
-Bu proje, Rent A Car hizmeti veren bir web uygulamasıdır. Proje, kullanıcılara araç kiralama, rezervasyon yönetimi, ve araç bilgilerini görüntüleme gibi işlevler sunar. Admin paneli ile yönetim kolaylığı sağlar ve kullanıcılara modern, kullanıcı dostu bir arayüz sunar.
+Bu proje, ASP.NET Core MVC kullanılarak geliştirilmiş, temel CRUD (Oluşturma, Okuma, Güncelleme, Silme) işlevselliklerine sahip tam kapsamlı bir araç kiralama web uygulamasıdır. Proje, modern .NET teknolojilerini ve en iyi geliştirme pratiklerini sergilemek amacıyla bir portfolyo çalışması olarak hazırlanmıştır.
 
-Proje Gereksinimleri:
-.NET 7 SDK
-Visual Studio 2022
-SQL Server
-Entity Framework Core
+## 🚗 Projenin Amacı
 
-Kurulum Adımları:
-Projeyi Kopyalayın
+**Rota Rent a Car**, kullanıcıların sisteme kaydolup giriş yapabildiği, mevcut araçları listeleyebildiği, araç detaylarını görüntüleyebildiği ve yönetici rolündeki kullanıcıların araç, marka gibi varlıkları yönetebildiği bir platform sunar. Bu proje, C# ve .NET ekosistemindeki yetkinlikleri pratik bir örnek üzerinden göstermeyi hedefler.
 
-'
-git clone https://github.com/username/rent-a-car.git
-cd rent-a-car
-Paket Yöneticisi Konsolu'nu Açın
-'
+## 🛠️ Kullanılan Teknolojiler
 
-Visual Studio'da projeyi açtıktan sonra, üst menüden Araçlar > NuGet Paket Yöneticisi > Paket Yöneticisi Konsolu seçeneğine gidin.
+Projenin geliştirilmesinde aşağıdaki teknolojiler ve kütüphaneler kullanılmıştır:
 
-Veritabanı Bağlantısı Ayarları
-'
-appsettings.json dosyasındaki ConnectionStrings bölümünde veritabanı bağlantı ayarlarını yapılandırın:
-'
+* **Backend:** ASP.NET Core MVC (.NET 8)
+* **Veritabanı Erişimi:** Entity Framework Core
+* **Kimlik Doğrulama ve Yetkilendirme:** ASP.NET Core Identity
+* **Veritabanı:** Microsoft SQL Server
+* **Frontend:** Razor Pages, HTML5, CSS3, Bootstrap
 
-"json"
-'
-"ConnectionStrings": {
-  "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=RentACarDB;Trusted_Connection=True;MultipleActiveResultSets=true"
-}
-'
+## ✨ Öne Çıkan Özellikler
 
-Migration Oluşturma ve Veritabanını Güncelleme
+* **Kullanıcı Yönetimi:** Güvenli kayıt (register) ve giriş (login) sistemi.
+* **Rol Tabanlı Yetkilendirme:** Sadece "Admin" rolüne sahip kullanıcıların kritik işlemleri (araç ekleme/silme/güncelleme) yapabilmesi.
+* **Araç Yönetimi:** Araçları listeleme, detaylarını görme, yeni araç ekleme, mevcut araçları güncelleme ve silme.
+* **Marka Yönetimi:** Araç markalarını yönetmek için tam CRUD desteği.
+* **İlişkisel Veri Yapısı:** Araçlar ve markalar arasında kurulan ilişkisel (one-to-many) veritabanı şeması.
+* **Temiz ve Sürdürülebilir Kod:** Standart MVC mimari desenlerine uygun, anlaşılır ve bakımı kolay kod yapısı.
 
-Paket Yöneticisi Konsolu'nda aşağıdaki komutları sırasıyla çalıştırarak migration işlemini gerçekleştirin ve veritabanını güncelleyin:
+## 🚀 Projeyi Yerel Makinede Çalıştırma
 
-Migration oluşturmak için:
+Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 
-'
-Add-Migration InitialCreate
-Veritabanını güncellemek için:
-'
+1.  **Repoyu Klonlama:**
+    ```bash
+    git clone [https://github.com/AhmetDemiroglu/rota-rent-a-car.git](https://github.com/AhmetDemiroglu/rota-rent-a-car.git)
+    ```
 
-'
-Update-Database
-Uygulamayı Çalıştırın Visual Studio’da F5 tuşuna basarak uygulamayı başlatın. Uygulama, varsayılan olarak https://localhost:5001 adresinde çalışacaktır.
-'
+2.  **Gerekli Yazılımlar:**
+    * [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+    * [Visual Studio 2022](https://visualstudio.microsoft.com/tr/) veya uyumlu bir IDE.
+    * [SQL Server](https://www.microsoft.com/tr-tr/sql-server/sql-server-downloads) (Express, Developer veya tam sürüm).
 
-Proje Yapısı:
-Data: Veritabanı işlemleri ve EF Core repository sınıfları burada bulunur.
-Controllers: MVC modelinde yer alan kontrol sınıfları burada tanımlıdır.
-Views: Razor View dosyalarının bulunduğu dizindir.
-wwwroot: Statik dosyalar (CSS, JS, resimler) burada bulunur.
+3.  **Veritabanı Ayarları:**
+    * Proje içerisindeki `appsettings.json` dosyasını açın.
+    * `ConnectionStrings` bölümündeki `DefaultConnection` değerini kendi SQL Server bağlantı bilgilerinizle güncelleyin.
+        ```json
+        "ConnectionStrings": {
+          "DefaultConnection": "Server=SUNUCU_ADINIZ;Database=RotaRentACarDB;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"
+        }
+        ```
+    * Visual Studio'da **Package Manager Console**'u açın ve aşağıdaki komutu çalıştırarak veritabanını oluşturun ve şemayı uygulayın:
+        ```powershell
+        Update-Database
+        ```
 
-Teknolojiler:
-.NET Core 7
-Entity Framework Core
-Bootstrap
-SQLite (Geliştirme aşaması için) veya SQL Server
+4.  **Uygulamayı Başlatma:**
+    * Projeyi Visual Studio üzerinden `F5` tuşuna basarak veya `dotnet run` komutu ile başlatın.
+    * Uygulama başladığında, ilk olarak bir kullanıcı kaydı oluşturun. Veritabanında varsayılan bir admin rolü veya kullanıcısı bulunmamaktadır.
 
-Özellikler:
-Admin Paneli: Yöneticiler, araç ve kullanıcı yönetimi gibi işlemleri gerçekleştirebilir.
-Kullanıcı Yönetimi: Bireysel ve kurumsal kullanıcılar sisteme kayıt olup araç rezervasyonu yapabilir.
-Araç Yönetimi: Yöneticiler araç ekleyebilir, düzenleyebilir ve silebilir.
-Rezervasyon Sistemi: Kullanıcılar, araç kiralama rezervasyonlarını yapabilir ve yönetebilir.
+## 📸 Ekran Görüntüleri
 
-Katkıda Bulunma:
-Katkıda bulunmak isterseniz lütfen bir pull request gönderin veya bir issue açın.
+*(Buraya uygulamanın ana sayfasından, araç listesinden veya admin panelinden birkaç ekran görüntüsü ekleyebilirsin. Bu, projenin görsel olarak nasıl göründüğünü sergilemek için harikadır.)*
+
+## 💡 Gelecek Geliştirmeler ve Potansiyel
+
+Bu proje, aşağıdaki özelliklerle daha da geliştirilebilir:
+
+* **Servis Katmanı (Business Layer):** İş mantığını Controller'lardan ayırarak daha test edilebilir ve modüler bir mimari oluşturmak.
+* **ViewModel/DTO Kullanımı:** Güvenliği artırmak ve View'lara sadece gerekli veriyi taşımak için ViewModel'ler implemente etmek.
+* **Web API'ye Dönüşüm:** Backend'i tamamen bir Web API haline getirip, frontend'i Vue.js veya React gibi modern bir JavaScript kütüphanesi ile ayrı bir proje olarak geliştirmek.
+* **Kiralama İşlevselliği:** Kullanıcıların belirli tarihler arasında araç kiralama talebi oluşturabilmesi.
