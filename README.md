@@ -55,16 +55,3 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 4.  **Uygulamayı Başlatma:**
     * Projeyi Visual Studio üzerinden `F5` tuşuna basarak veya `dotnet run` komutu ile başlatın.
     * Uygulama başladığında, ilk olarak bir kullanıcı kaydı oluşturun. Veritabanında varsayılan bir admin rolü veya kullanıcısı bulunmamaktadır.
-
-## 📸 Ekran Görüntüleri
-
-*(Buraya uygulamanın ana sayfasından, araç listesinden veya admin panelinden birkaç ekran görüntüsü ekleyebilirsin. Bu, projenin görsel olarak nasıl göründüğünü sergilemek için harikadır.)*
-
-## 💡 Gelecek Geliştirmeler ve Potansiyel
-
-Bu proje, aşağıdaki özelliklerle daha da geliştirilebilir:
-
-* **Servis Katmanı (Business Layer):** İş mantığını Controller'lardan ayırarak daha test edilebilir ve modüler bir mimari oluşturmak.
-* **ViewModel/DTO Kullanımı:** Güvenliği artırmak ve View'lara sadece gerekli veriyi taşımak için ViewModel'ler implemente etmek.
-* **Web API'ye Dönüşüm:** Backend'i tamamen bir Web API haline getirip, frontend'i Vue.js veya React gibi modern bir JavaScript kütüphanesi ile ayrı bir proje olarak geliştirmek.
-* **Kiralama İşlevselliği:** Kullanıcıların belirli tarihler arasında araç kiralama talebi oluşturabilmesi.
